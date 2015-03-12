@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Project9MyApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="testTextView">Main Menu</string>
+    <string name="selectWorkoutTextView">Select Workout</string>
+    <string name="editWorkoutTextView">Edit Workouts</string>
+    <string name="menu_exit">Exit</string>
+    <string name="title_activity_edit_workout">EditWorkout</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="editWorkoutsAdd">Add New Workouts</string>
+    <string name="editWorkoutsEdit">Edit Workouts</string>
+    <string name="editWorkoutsDelete">Delete Workouts</string>
+    <string name="title_activity_add_workouts">AddWorkouts</string>
+    <string name="addWorkouts">Create Your Workout</string>
+    <string name="workoutTitleTextView">Workout Title</string>
+    <string name="createWorkoutButton">Create Workout</string>
+    <string name="title_activity_add_exercises">AddExercises</string>
+    <string name="workoutExerciseTitleEditText">Workout Title</string>
+    <string name="exerciseNameTextView">Name:</string>
+    <string name="addExercises">Add Exercises</string>
+    <string name="setNumberTextView">Number of Sets:</string>
+    <string name="restTextView">Rest Between Sets:</string>
+    <string name="addExerciseButton">Add Exercise</string>
+    <string name="title_activity_workout_go">WorkoutGo</string>
+    <string name="buttonWorkoutSelect">Add Workout Test</string>
+
+</resources>

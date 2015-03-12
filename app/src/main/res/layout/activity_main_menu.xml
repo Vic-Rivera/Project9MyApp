@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainWorkoutActivity"
+    android:id="@+id/layoutMain">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/testTextView"
+        android:id="@+id/menuLabel"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <View
+        android:id="@+id/separatorLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/menuLabel"
+        android:background="@android:color/black"
+        android:padding="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selectWorkoutTextView"
+        android:id="@+id/selectWorkoutTextView"
+        android:layout_marginTop="90dp"
+        android:textSize="17sp"
+        android:layout_below="@+id/menuLabel"
+        android:layout_centerHorizontal="true"
+        android:onClick="goSelectPage"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/selectWorkoutTextView"
+        android:layout_alignRight="@id/selectWorkoutTextView"
+        android:text="@string/editWorkoutTextView"
+        android:id="@+id/editWorkoutTextView"
+        android:textSize="17sp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/selectWorkoutTextView"
+        android:layout_centerHorizontal="true"
+        android:onClick="goEditPage"/>
+
+</RelativeLayout>

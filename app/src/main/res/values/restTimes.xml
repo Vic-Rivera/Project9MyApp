@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <string-array name="rest_times_mins">
+            <item>30 sec</item>
+            <item>1 min</item>
+            <item>2 min</item>
+            <item>3 min</item>
+        </string-array>
+    </resources>

@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.vic.project9myapp.AddExercises"
+    android:id="@+id/addExercisesLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addExercises"
+        android:id="@+id/addExercises"
+        android:textSize="30sp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+id/separatorLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/addExercises"
+        android:background="@android:color/black"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/workoutExerciseTitleEditText"
+        android:id="@+id/workoutExerciseTitleEditText"
+        android:layout_below="@+id/separatorLine"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workoutExerciseTitleEditText"
+        android:text="@string/exerciseNameTextView"
+        android:id="@+id/exerciseNameTextView"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/addExercises"
+        android:layout_toStartOf="@+id/addExercises" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/workoutExerciseTitleEditText"
+        android:layout_alignRight="@+id/separatorLine"
+        android:inputType="text"
+        android:id="@+id/exerciseNameEditText"
+        android:layout_alignLeft="@+id/workoutExerciseTitleEditText"
+        android:layout_alignStart="@+id/workoutExerciseTitleEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setNumberTextView"
+        android:id="@+id/setNumberTextView"
+        android:layout_below="@+id/exerciseNameEditText"
+        android:layout_alignLeft="@+id/exerciseNameTextView"
+        android:layout_alignStart="@+id/exerciseNameTextView"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/numberSetsEditText"
+        android:layout_alignBottom="@+id/setNumberTextView"
+        android:layout_toRightOf="@+id/setNumberTextView"
+        android:layout_toEndOf="@+id/setNumberTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restTextView"
+        android:id="@+id/restTextView"
+        android:layout_below="@+id/setNumberTextView"
+        android:layout_alignLeft="@+id/setNumberTextView"
+        android:layout_alignStart="@+id/setNumberTextView"
+        android:layout_marginTop="55dp"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/restTimeSpinner"
+        android:layout_alignTop="@+id/restTextView"
+        android:layout_toRightOf="@+id/workoutExerciseTitleEditText"
+        android:layout_toEndOf="@+id/workoutExerciseTitleEditText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addExerciseButton"
+        android:id="@+id/AddExerciseButton"
+        android:layout_below="@+id/restTimeSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:onClick="addWorkExec"/>
+
+
+</RelativeLayout>

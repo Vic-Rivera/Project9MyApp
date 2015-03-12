@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.vic.project9myapp.EditWorkout">
+    <item android:id="@+id/menu_main"
+        android:title="Main Menu"
+        app:showAsAction="never"
+        android:orderInCategory="100" />
+
+    <item android:id="@+id/menu_exit"
+        android:title="@string/menu_exit"
+        app:showAsAction="never"
+        android:orderInCategory="101"/>
+</menu>
